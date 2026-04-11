@@ -10,6 +10,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 main div{
@@ -19,4 +20,15 @@ main div{
 a{
     text-decoration: none;
     color: white;
+}
+
+footer{
+    background-color: rgb(14, 14, 29);
+    text-align: center;
+}
+
+.volver{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
