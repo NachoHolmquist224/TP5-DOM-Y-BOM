@@ -7,8 +7,8 @@ const persona = {
   altura: 0,
 
   mostrarGeneracion: function () {
-    const añonacimiento = new Date().getFullYear() - this.edad;
-    switch (añonacimiento) {
+    const añonacimiento = new Date().getFullYear() - persona.edad;
+    switch (true) {
       case añonacimiento >= 1930 && añonacimiento <= 1948:
         alert(
           "Perteneces a la generación silenciosa, tu rasgo característico es la austeridad",
@@ -41,7 +41,7 @@ const persona = {
   },
 
   esMayorDeEdad: function () {
-    if (this.edad >= 18) {
+    if (persona.edad >= 18) {
       alert("Eres mayor de edad");
     } else {
       alert("Eres menor de edad");
@@ -50,7 +50,7 @@ const persona = {
 
   mostrarDatos: function () {
     alert(
-      `Nombre: ${this.nombre}\nEdad: ${this.edad}\nDNI: ${this.dni}\nSexo: ${this.sexo}\nPeso: ${this.peso}\nAltura: ${this.altura}`,
+      `Nombre: ${persona.nombre}\nEdad: ${persona.edad}\nDNI: ${persona.dni}\nSexo: ${persona.sexo}\nPeso: ${persona.peso}\nAltura: ${persona.altura}`,
     );
   },
 };
@@ -79,4 +79,5 @@ function actualizarpersona(e) {
   persona.peso = peso;
   persona.altura = altura;
   formulario.reset();
+  alert("Datos actualizados correctamente");
 }
