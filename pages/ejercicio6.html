@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trabajo práctico N° 5 de DOM y BOM" />
+    <meta name="author" content="Holmquist Ignacio" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style2.css" />
+    <title>Ejercicio 6 - Temporizador</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <h1 class="my-0 display-4">Temporizador</h1>
+        <div class="d-flex gap-2 justify-content-center mb-2">
+        <span class="digit fs-1" id="hr">00</span>
+        <span class="txt fs-2">Hr</span>
+        <span class="digit fs-1" id="min">00</span>
+        <span class="txt fs-2">Min</span>
+        <span class="digit fs-1" id="sec">00</span>
+        <span class="txt fs-2">Sec</span>
+      </div>
+      <div class="d-flex gap-3">
+        <button class="btn btn-success fw-bold" id="start">Iniciar</button>
+        <button class="btn btn-warning fw-bold" id="stop">Pausar</button>
+        <button class="btn btn-danger fw-bold" id="reset">Resetear</button>
+      </div>
+      <button class="btn btn-secondary volver">
+        <i class="bi bi-skip-backward-fill"></i
+        ><a href="../index.html"> Volver al inicio</a>
+      </button>
+    </main>
+    <footer class="py-4">
+      <h6>&copy; 2026 TP5 - DOM y BOM. Todos los derechos reservados</h6>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/ejercicio6.js"></script>
+  </body>
+</html>
